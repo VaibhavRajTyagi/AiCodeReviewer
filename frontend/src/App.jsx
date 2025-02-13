@@ -60,7 +60,7 @@ function App() {
             />
           </div>
           <div className="bottom-controls">
-            <div className="language-selector">
+            {/* <div className="language-selector">
               <select
                 value={language}
                 onChange={(e) => setLanguage(e.target.value)}
@@ -71,7 +71,7 @@ function App() {
                 <option value="python">Python</option>
                 <option value="cpp">C++</option>
               </select>
-            </div>
+            </div> */}
             <button
               onClick={reviewCode}
               disabled={loading}
