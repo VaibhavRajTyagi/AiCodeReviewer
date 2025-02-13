@@ -7,6 +7,9 @@ import axios from 'axios'
 import './App.css'
 
 function App() {
+
+  const url = 'https://aicodereviewer-backend.onrender.com' || 'http://localhost:3000' ;
+
   const [code, setCode] = useState(`function example() {
   // Write your code here
   return "Hello World!";
@@ -22,7 +25,7 @@ function App() {
   async function reviewCode() {
     try {
       setLoading(true);
-      const response = await axios.post('http://localhost:3000/ai/get-review', { code });
+      const response = await axios.post(`${url}/ai/get-review`, { code });
       setReview(response.data);
     } catch (error) {
       setReview('```error\nFailed to review code. Please try again.\n```');
