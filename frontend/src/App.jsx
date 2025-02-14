@@ -87,7 +87,7 @@ function App() {
         </div>
       </main>
       <footer className="app-footer">
-        <p>© 2024 Code Review AI • <a href="#">Documentation</a> • <a href="#">GitHub</a></p>
+        <p>© 2024 Code Review AI • Made with ❤️ by Vaibhav Raj Tyagi. • <a href="https://github.com/VaibhavRajTyagi/AiCodeReviewer" target='_blank'>GitHub</a></p>
       </footer>
     </>
   )
