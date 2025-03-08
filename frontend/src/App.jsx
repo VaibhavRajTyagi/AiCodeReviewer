@@ -16,7 +16,7 @@ function App() {
 }`);
   const [review, setReview] = useState('');
   const [loading, setLoading] = useState(false);
-  const [language, setLanguage] = useState('javascript');
+  // const [language, setLanguage] = useState('javascript');
 
   useEffect(() => {
     prism.highlightAll()
@@ -38,7 +38,7 @@ function App() {
     <>
       <header className="app-header">
         <div className="header-content">
-          <h1>Code Review AI</h1>
+          <h1>AiCodeR.</h1>
           <p>Get instant, professional code reviews powered by Google Gemini AI.</p>
         </div>
       </header>
@@ -87,7 +87,7 @@ function App() {
         </div>
       </main>
       <footer className="app-footer">
-        <p>© 2024 Code Review AI • Made with ❤️ by Vaibhav Raj Tyagi. • <a href="https://github.com/VaibhavRajTyagi/AiCodeReviewer" target='_blank'>GitHub</a></p>
+        <p>© 2024 AiCodeR • Made with ❤️ by Vaibhav Raj Tyagi. • <a href="https://github.com/VaibhavRajTyagi/AiCodeReviewer" target='_blank'>GitHub</a></p>
       </footer>
     </>
   )
